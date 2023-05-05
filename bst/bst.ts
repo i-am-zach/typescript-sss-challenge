@@ -26,7 +26,7 @@ export class BST<T> {
 
     public insert(key: number, value: T): BSTNode<T> {
         if(this.root) {
-            return this.insert(key, value);
+            return this.root.insert(key, value);
         } else {
             this.root = new BSTNode(key, value);
             return this.root;
